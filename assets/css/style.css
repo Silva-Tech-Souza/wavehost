@@ -1430,3 +1430,6 @@ section {
   color: rgb(255, 255, 255) !important;
 }
 
+.imagdimens {
+  width: 70% !important;
+}
