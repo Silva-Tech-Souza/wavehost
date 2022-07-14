@@ -72,12 +72,15 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 22px 0;
-  background: #fff;
+  background: rgb(255, 255, 255);
 }
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 12px 0;
+  background: #fff;
+  color: #008cff;
 }
+
 #header .logo h1 {
   font-size: 30px;
   margin: 0;
@@ -122,24 +125,34 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 400;
-  color: #555555;
+  color: #555555 ;
   white-space: nowrap;
   transition: 0.3s;
 }
+
+
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
+
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #3498db;
+  color: #ffffff;
 }
+.navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #008cff !important;
+}
+
 .navbar .getstarted, .navbar .getstarted:focus {
   background: #3498db;
-  padding: 8px 25px;
+  padding: 2px 4px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #fff;
+  color: rgb(0, 119, 255);
+}
+.navbar li:hover .getstarted:hover .focas{
+  color: #fff !important;
 }
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
   color: #fff;
@@ -318,12 +331,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #3498db;
-  border: 2px solid #3498db;
+  background: #3498dbc0;
+  color: #fff;
+ 
 }
 #hero .btn-get-started:hover {
-  background: #3498db;
-  color: #fff;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -599,7 +613,7 @@ section {
 .services .icon-box::before {
   content: "";
   position: absolute;
-  background: #e1f0fa;
+  background: #d1e4f0;
   right: -60px;
   top: -40px;
   width: 100px;
@@ -1062,7 +1076,7 @@ section {
 --------------------------------------------------------------*/
 .pricing .box {
   padding: 20px;
-  background: #f9f9f9;
+  background: #e8f5ffce;
   text-align: center;
   border-radius: 8px;
   position: relative;
@@ -1176,6 +1190,13 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background-image: url("../img/fotter.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
 .contact .contact-about h3 {
   font-size: 28px;
   margin: 0 0 10px 0;
@@ -1197,7 +1218,7 @@ section {
 .contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #fff;
+
   color: #3498db;
   line-height: 1;
   padding: 8px 0;
@@ -1394,7 +1415,7 @@ section {
 
 .toggle {
   margin-top: 2rem;
-  color: hsl(234, 14%, 74%);
+  color: hsl(0, 0%, 25%);
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -1432,4 +1453,24 @@ section {
 }
 .checkbox:checked + .sub {
   justify-content: flex-end;
+}
+
+.imagemmaxlogo{
+  max-width: 250px;
+}
+.letrapreta{
+  color: #000 !important;
+}
+.letrabranca{
+  color: rgb(255, 255, 255) !important;
+}
+.imgshandow{
+  box-shadow: 5px 5px #2383c4 !important;
+}
+.homeimg{
+  background-image: url("../img/home.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
 }

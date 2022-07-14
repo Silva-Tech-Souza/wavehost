@@ -8,7 +8,7 @@
   <title>Yanhost</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logoicon.svg">
   <!-- Favicons -->
 
 
@@ -31,7 +31,7 @@
 </head>
 
 <body>
-
+<section class="homeimg">
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
@@ -42,13 +42,18 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link  " href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Sobre Nós</a></li>
      
           <li><a class="nav-link scrollto" href="#pricing">Planos</a></li>
           <li><a class="nav-link scrollto" href="#suporte">Suporte</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
-         
+          <li class=" scrollto dropdown focas"><a href="#"><span>Ferramentas</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://cloud.yanhost.com.br/websites">Websites</a></li>
+              <li><a href="https://cloud.yanhost.com.br/emails">Emails</a></li>
+              <li><a href="https://cloud.yanhost.com.br/domains">Domínios</a></li>
+            </ul>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -57,27 +62,104 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
+  <section id="hero" class="d-flex align-items-center ">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Expanda seus negócios com a Yanhost</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Hospede o seu site hoje mesmo</h2>
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up" style="font-size: 58px;">Hospede seu site com a Yanhost</h1>
+          <h2 data-aos="fade-up" style="color:#222; font-size: 35px;" data-aos-delay="400">Compre a sua hospedagem hoje mesmo!</h2>
           <div data-aos="fade-up" data-aos-delay="800">
             <a href="#pricing" class="btn-get-started scrollto">Planos</a>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="assets/img/persona.png" class="img-fluid " style="max-width: 380px;" alt="">
         </div>
       </div>
     </div>
-
   </section>
-
+</section>
+  
   <main id="main">
+ <!-- ======= Pricing Section ======= -->
+ <section id="pricing" class="pricing">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Planos de hospedagem</h2>
+      
+     
+      <div class="toggle">
+        <label>Por Mês</label>
+        <div class="toggle-btn">
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label class="sub" id="sub" for="checkbox">
+            <div class="circle"></div>
+          </label>
+        </div>
+        <label>Por Ano</label>
+       
+      </div>
+    </div>
    
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
+          <h3>Plano Básico</h3>
+          <h4 id="basic"><sup>R$</sup>29,90<span> </h4>
+          <ul>
+            <li>Aida dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li class="na">Pharetra massa</li>
+            <li class="na">Massa ultricies mi</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+        <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
+          <h3>Plano Médio</h3>
+          <h4 id="professional"><sup>R$</sup>39,90<span> </h4>
+          <ul>
+            <li>Aida dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li>Pharetra massa</li>
+            <li class="na">Massa ultricies mi</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+        <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
+          <h3>Plano Avançado</h3>
+          <h4 id="master"><sup>R$</sup>59,90<span> </h4>
+          <ul>
+            <li>Aida dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li>Pharetra massa</li>
+            <li>Massa ultricies mi</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+  
+</div>
+</div>
+
+</section><!-- End Pricing Section -->
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -87,24 +169,7 @@
           <h2>Sobre Nós</h2>
         </div>
 
-        <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              Vantagens de hospedar seu site no UOL HOST
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            </ul>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              Host Cloud é um modelo profissional do Bootstrap 4 da TemplateMo para os sites da sua empresa de hospedagem. Existem 4 páginas HTML incluídas neste modelo. Você pode se sentir à vontade para personalizar qualquer coisa. Por favor, compartilhe este modelo para seus amigos. Obrigada.
-            </p>
-    
-          </div>
-        </div>
+   
 
       </div>
     </section><!-- End About Us Section -->
@@ -115,7 +180,12 @@
 
         <div class="row">
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
-            <img src="assets/img/counts-img.svg" alt="" class="img-fluid">
+           
+            
+            <figure>
+              <p> <img src="assets/img/local.png" alt="" class="img-fluid imgshandow" >
+             
+            </figure>
           </div>
 
           <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
@@ -123,33 +193,32 @@
               <div class="row">
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-emoji-smile"></i>
                    
-                    <p> Suporte dedicado com atendimento extraordinário feito por especialistas de verdade</p>
+                    <h3 style="font-size: 20px; padding: 5px;"> ● Painel de controle fácil de usar</h3>
+                    <p> Inclui o diversos recursos para configurar ou adicionar recursos, de wabsites a darabases</p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
+                   
+                    <h3 style="font-size: 20px;"> ● Configuração de nome de domínio com 1 clique.</h3>
+                    <p>Nunca foi tão fácil vincular o seu site ao seu nome de domínio com o domínio registrado da Yanhost.</p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-clock"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
+                    <h3 style="font-size: 20px;">  ● Maior tranquilidade para vender</h3>
+                    <p>Com o tempo que as automações e atendimento Cloudez economizam para você, vamos juntos pensar estrategicamente.</p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
-                    <i class="bi bi-award"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+                    <h3 style="font-size: 20px;">  ● Certificado SSL</h3>
+                   
+                    <p>Navegue em ambiente seguro</p>
                   </div>
                 </div>
               </div>
@@ -159,111 +228,27 @@
       </div>
     </section><!-- End Counts Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Planos de hospedagem</h2>
-          <p>Este TLD oferece suporte a domínios premium. Por favor, note que os domínios premium possuem preços diferenciados.</p>
-         
-          <div class="toggle">
-            <label>Por Ano</label>
-            <div class="toggle-btn">
-              <input type="checkbox" class="checkbox" id="checkbox" />
-              <label class="sub" id="sub" for="checkbox">
-                <div class="circle"></div>
-              </label>
-            </div>
-            <label>Por Mês</label>
-          </div>
-        </div>
-       
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
-              <h3>P</h3>
-              <h6> <sup>R$</sup></h6>
-              <h4 id="basic">19,99</span></h4>
-              <ul>
-                <li>Memória: 384MB</li>
-                <li>Espaço: 10GB</li>
-                <li>Contas de E-mail - 12GB: 1</li>
-                <li>Espaço para bases MYSQL: 1GB</li>
-                <li class="na">Transferência ilimitada</li>
-                <li class="na">Backup de sites</li>
-                <li class="na">Certificado Let's Encrypt</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Assinar</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
-              <h3>M</h3>
-              <h6> <sup>R$</sup></h6>
-              <h4 id="professional">39,99</h4>
-              <ul>
-                <li>Memória: 384MB</li>
-                <li>Espaço: 10GB</li>
-                <li>Contas de E-mail - 12GB: 1</li>
-                <li>Espaço para bases MYSQL: 1GB</li>
-                <li class="na">Transferência ilimitada</li>
-                <li class="na">Backup de sites</li>
-                <li class="na">Certificado Let's Encrypt</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Assinar</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
-              <h3>G</h3>
-              <h6> <sup>R$</sup></h6>
-              <h4 id="master" >49,99</h4>
-              <ul>
-                 <li>Memória: 384MB</li>
-                <li>Espaço: 10GB</li>
-                <li>Contas de E-mail - 12GB: 1</li>
-                <li>Espaço para bases MYSQL: 1GB</li>
-                <li class="na">Transferência ilimitada</li>
-                <li class="na">Backup de sites</li>
-                <li class="na">Certificado Let's Encrypt</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Assinar</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
-
+   
   <!-- ======= Team Section ======= -->
   <section id="suporte">
     <div class="container">
-
-      
       <div class="row content">
         <div class="col-lg-7" data-aos="fade-up" data-aos-delay="150">
           <div class="section-title" data-aos="fade-up">
             <h2>SUPORTE</h2>
-            <p>O suporte da Cloudez está sempre disposto para ajudá-lo.</p>
+            <p>O suporte da Cloudez está sempre disposto para ajudá-lo.<br>Provemos suporte técnico e apoio estratégico especializado. Atendimento técnico para você, relacionamento estratégico para você.</p>
           </div>
           
-          <div data-aos="fade-up" data-aos-delay="800">
-            <a href="#pricing" class="btn-get-started scrollto">Planos</a>
+          <div class="row section-title">
+            
+            <a href="https://cloudez.io/br?utm_campaign=partner-yanwavessc-yan-waves-badge&utm_medium=badge&utm_source=partner&utm_content=partner&utm_term="><img alt="" width="220" height="60" src="https://files.cloudez.io/stamp/partner-sm.svg"></a>
+            
+          
+         
           </div>
         </div>
         <div class="col-lg-5 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-          <img src="assets/img/stssobre.svg" class="imagdimens align-items-center" >
+          <img src="assets/img/suporte.png" class="imagdimens imgshandow align-items-center" >
   
         </div>
       </div>
@@ -271,86 +256,7 @@
      
     </div>
   </section><!-- End Team Section -->
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>DEPOIMENTOS</h2>
-          <p>Magnam dolores commodi suscipit eum quidem consectetur velit</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                 
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                 
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                 
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-           
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
+ 
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
@@ -363,11 +269,12 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Como a hospedagem de sites do UOL HOST funciona?</h4>
+            <h4>O que é hospedagem de sites?</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              A hospedagem do UOL HOST possibilita que pessoas ou empresas armazenem arquivos do seu site como imagens, vídeos e textos nos servidores do UOL, tudo com a tecnologia LXC o que garante maior performance para seu site.
+              A hospedagem de sites é um serviço fornecido por empresas (o host) que vendem ou alugam espaços em um servidor, onde você poderá armazenar arquivos, deixando seu site acessível na web. Normalmente, é necessário que você seja proprietário de um domínio, e você pode contar com o suporte dessas empresas para adquirir um.
+
             </p>
           </div>
         </div><!-- End F.A.Q Item-->
@@ -388,12 +295,13 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Como migrar meu site de outra hospedagem para o UOL HOST?</h4>
+            <h4>Se eu já tiver um site, eu posso transferi-lo para a hospedagem da Yanhost</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              1º - Após a contratação dos serviços de hospedagem de sites, domínios e e-mails, você visualizará logo no primeiro acesso ao painel de controle uma área de detalhes com informações importantes para administração dos serviços contratados;
-             <br> 2º - Inicie a publicação de seus arquivos através dos dados informados na área de detalhes do Painel de controle, para mais informações sobre publicação de arquivos, acesse a FAQ:
+              A migração do seu site para a Yanhost é um processo simples. Acesse os arquivos do seu site existente e carregue-os usando através do nosso Centro de Controle de Hospedagem (ou usando um cliente de FTP), ou acesse a aba de migração e transfira em um clique. Se você não tiver acesso imediato aos seus arquivos do site, poderá solicitar uma cópia com o provedor de hospedagem atual do seu site.
+             <br> Caso surja qualquer dúvida ao longo do processo, a nossa equipe de suporte está aqui para ajudá-lo. Podemos ajudá-lo a determinar o melhor método para fazer a transição do seu site para uma conta da Yanhost.
+              
             </p>
           </div>
         </div><!-- End F.A.Q Item-->
@@ -405,7 +313,7 @@
           </div>
           <div class="col-lg-7">
             <p>
-              AA quantidade de sites varia de acordo com o plano contratado.
+              A quantidade de sites varia de acordo com o plano contratado.
             </p>
           </div>
         </div><!-- End F.A.Q Item-->
@@ -414,10 +322,10 @@
 
       </div>
     </section><!-- End F.A.Q Section -->
-  
+ 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-     
+    
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -427,14 +335,14 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-about">
-              <h3><img src="assets/img/logo.svg"></h3>
-              <p>Yan Waves Technology Global Network Desenvolvimentos de Dados LTDA, <br>Desenvolvimento e licenciamento de programas de computador não-customizáveis</p>
+            <div class="contact-about"><h3><img src="assets/img/logob.svg" class="imagemmaxlogo " ></h3>
+              <p  class="letrabranca" style="font-size: 14px;">Yan Waves Technology Global Network LTDA<br></p> 
               <div class="social-links">
                 
-                <a href="https://www.instagram.com/yanhost/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.instagram.com/yanhost/" ><i class="bi bi-instagram"></i></a>
                
               </div>
+              
             </div>
           </div>
           <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="300">
@@ -443,21 +351,24 @@
 
           <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
             <div class="info">
-              <div>
+              <div class="letrabranca">
+                <i class="ri-computer-fill"></i>
+                <p> 7345 W SAND LAKE RD | STE 210 OFFICE 285 | ORLANDO, FL 32819 US</p>
+              </div>
+              <div  class="letrabranca">
                 <i class="ri-map-pin-line"></i>
-                <p>Rua Doutor João Colin, 1285,<br>Joinville-SC</p>
+                <p>Rua Doutor João Colin, 1285,<br>Joinville-SC, CEP 89204-001</p>
               </div>
 
-              <div>
+              <div class="letrabranca">
                 <i class="ri-mail-send-line"></i>
-                <p>suporte@yanhost.com.br</p>
+                <p> suporte@yanhost.com.br</p>
               </div>
-
+             
+              
               <div>
-                <i class="ri-phone-line"></i>
-                <p>+55 (11) 67 9101-4925</p>
-              </div>
-
+              <a href="https://cloudez.io/br?utm_campaign=partner-yanwavessc-yan-waves-badge&utm_medium=badge&utm_source=partner&utm_content=partner&utm_term="><img alt="" width="220" height="60" src="https://files.cloudez.io/stamp/partner-sm.svg"></a>
+            </div>
             </div>
           </div>
 
@@ -468,28 +379,28 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#3498db" fill-opacity="0.8" d="M0,0L17.1,42.7C34.3,85,69,171,103,181.3C137.1,192,171,128,206,133.3C240,139,274,213,309,234.7C342.9,256,377,224,411,197.3C445.7,171,480,149,514,170.7C548.6,192,583,256,617,266.7C651.4,277,686,235,720,186.7C754.3,139,789,85,823,90.7C857.1,96,891,160,926,186.7C960,213,994,203,1029,192C1062.9,181,1097,171,1131,144C1165.7,117,1200,75,1234,74.7C1268.6,75,1303,117,1337,117.3C1371.4,117,1406,75,1423,53.3L1440,32L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>
+  
   <!-- ======= Footer ======= -->
-  <footer id="footer" style="background-color: #3498db; opacity: 0.8; box-shadow: none;">
+  <footer id="footer" style="background-color: #001625; opacity: 0.8; box-shadow: none;">
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 text-lg-left text-center">
-          <div class="copyright">
+          <div class="copyright letrabranca" style="font-size: 12px;">
          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
          Copyright &copy;
          <script>
              document.write(new Date().getFullYear());
-         </script> Todos os direitos reservados | Silva Tech Souza <i class="fa fa-heart " aria-hidden="true "></i>
+         </script> Todos os direitos reservados |<a href="#" class="scrollto letrabranca">Yan Waves LTDA CNPJ 10723083/0002-81</a>  <i class="fa fa-heart " aria-hidden="true "></i>
          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </div>
         
         </div>
         <div class="col-lg-6">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#hero" class="scrollto letrahover" >Home</a>
-            <a href="#about" class="scrollto letrahover">Sobre Nós</a>
-            <a href="https://cloudez.io/br/privacidade-de-dados" class="letrahover">Política de Privacidade</a>
-            <a href="https://cloudez.io/br/termos-de-servico" class="letrahover">Termos de Uso</a>
+            <a href="#hero" class="scrollto letrahover letrabranca" >Home</a>
+            <a href="#about" class="scrollto letrahover letrabranca">Sobre Nós</a>
+            <a href="https://cloudez.io/br/privacidade-de-dados" class="letrahover letrabranca">Política de Privacidade</a>
+            <a href="https://cloudez.io/br/termos-de-servico" class="letrahover letrabranca">Termos de Uso</a>
           </nav>
         </div>
       </div>
@@ -518,10 +429,10 @@ const master = document.getElementById("master");
 const basic = document.getElementById("basic");
 
 checkbox.addEventListener("click", () => {
-  basic.textContent = basic.textContent === "26,90" ? "19,99" : "26,90";
+  basic.textContent = basic.textContent === "R$29,90" ? "R$358,80" : "R$29,90";
   professional.textContent =
-    professional.textContent === "34,99" ? "39,99" : "34,99";
-  master.textContent = master.textContent === "44,99" ? "49,99" : "44,99";
+    professional.textContent === "R$39,90" ? "R$478,80" : "R$39,90";
+  master.textContent = master.textContent === "R$59,90" ? "R$718,8" : "R$59,90";
 });
 </script>
 </html>
